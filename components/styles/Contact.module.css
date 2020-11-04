@@ -1,0 +1,144 @@
+
+
+.myProfile{
+  color:#000;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.btnBox{
+  position: absolute;
+	top: 84%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.btnStyle{
+  display: inline-block;
+  width: 400px;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 24px;
+  background: #000;
+  border-radius: 30px;
+  border: none;
+}
+
+.btnStyle:hover {
+  color: skyblue;
+}
+
+.soccerAnimation img{
+  width: 100px;
+  height: 100px;
+  border-radius: 60%;
+  position: absolute;
+  bottom: 50px;
+	right:300px;
+  animation: r1 3s linear infinite;
+  
+}
+
+@keyframes r1 {
+  0%   { transform: rotate(0deg);}
+  100% { transform: rotate(-360deg);}
+}
+
+
+.myContact{
+  position: absolute;
+	top: 32%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.myContact1{
+  position: absolute;
+	top: 45%;
+	left: 37%;
+  transform: translate(-50%, -50%);
+  animation: key1 .3s ease infinite alternate;
+ 
+}
+
+@keyframes key1{
+  0% {transform: translateY(0px);}
+  100% {transform: translateY(-5px);}
+}
+
+
+.myContact1 img{
+ width: 200px;
+ height: 200px;
+ border-radius: 50%;
+ border:3px solid #000 ;
+ margin-bottom: 50px;
+ text-align: center;
+ display: inline-block;
+  margin: 10px;
+
+}
+
+
+@media screen and (max-width: 814px){
+  .myProfile{
+    font-size: 3rem;
+    top: 25%;
+  }
+  .myContact{
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    text-align: center;
+  }
+  .myContact1{
+    position: absolute;
+    top: 43%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+  
+  }
+  
+  .myContact1 img{
+    width: 120px;
+    height: 120px;
+  
+  }
+  
+
+  .btnBox{
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .btnStyle{
+    width: 200px;
+    font-size: 20px;
+  }
+  
+  
+  .soccerAnimation img{
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+    position: absolute;
+    bottom: 50px;
+    right:25px;
+    animation: r1 3s linear infinite;
+    
+  }
+
+}

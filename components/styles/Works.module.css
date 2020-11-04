@@ -1,0 +1,239 @@
+
+.worksContainer{
+  background: url(https://publicdomainq.net/images/201708/20s/publicdomainq-0012444bll.jpg);
+  background-size:contain;
+  height: 100vh;
+  position:fixed;
+  width: 100%;
+  z-index:-100;
+  animation: cloudmove 60s linear infinite;
+  -webkit-animation: cloudmove 60s linear infinite;
+  -moz-animation: cloudmove 60s linear infinite;
+  margin: 0;
+}
+
+@keyframes cloudmove {
+  0% {background-position: 0 0;}
+  25% {background-position: 200px 5px;}
+  50% {background-position: 400px 0;}
+  75% {background-position: 600px 5px;}
+  100% {background-position: 800px 0;}
+}
+@-webkit-keyframes cloudmove {
+	0% {background-position: 0 0;}
+	25% {background-position: 200px 5px;}
+	50% {background-position: 400px 0;}
+	75% {background-position: 600px 5px;}
+	100% {background-position: 800px 0;}
+}
+@-moz-keyframes cloudmove {
+	0% {background-position: 0 0;}
+	25% {background-position: 200px 5px;}
+	50% {background-position: 400px 0;}
+	75% {background-position: 600px 5px;}
+  100% {background-positi: 800px 0;}
+}
+
+
+
+.myProfile{
+  color:#000;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  position: absolute;
+	top: 23%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.btnBox{
+  position: absolute;
+	top: 84%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.btnStyle{
+  display: inline-block;
+  width: 400px;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 24px;
+  background: #000;
+  border-radius: 30px;
+  border: none;
+}
+
+.btnStyle:hover {
+  color: skyblue;
+}
+
+.soccerAnimation img{
+  width: 100px;
+  height: 100px;
+  border-radius: 60%;
+  position: absolute;
+  bottom: 50px;
+	right:300px;
+  animation: r1 3s linear infinite;
+  
+}
+
+@keyframes r1 {
+  0%   { transform: rotate(0deg);}
+  100% { transform: rotate(-360deg);}
+}
+
+
+.worksImage{
+  width: 330px;
+  height: 230px;
+  border:none;
+}
+
+.worksBox{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+	top: 53%;
+	left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  animation-name: sample01;
+  animation-duration: 5s; 
+  animation-fill-mode: forwards; 
+ 
+}
+
+@keyframes sample01 {
+  0% {
+    opacity: 0;
+    
+  }
+  90% {
+   opacity: 1;
+   
+  }
+   100% {
+    opacity: 1;
+  } 
+}
+
+
+.worksBox1,.worksBox2,.worksBox3{
+  margin-right: 30px;
+  border: 1px solid black;
+  background: #fff;
+  padding-bottom: 10px;
+  
+}
+
+
+.worksBox1 h3,.worksBox2 h3,.worksBox3 h3 {
+  font-size: 20px;
+  padding: 5px 0  5px;
+  margin-left: 15px;
+  border-bottom:2px solid tomato;
+  width: 200px;
+  text-align: center;
+  margin-top: 0;
+}
+.worksBox1 h4,.worksBox2 h4,.worksBox3 h4 {
+  font-size: 15px;
+  margin-left: 20px;
+  
+}
+.worksBox1 p,.worksBox2 p,.worksBox3 p{
+  padding: 5px;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-top: -10px;
+}
+.worksBoxA {
+  padding: 5px;
+  padding-left:10px;
+  font-size: 15px;
+  margin-left: 15px;
+  font-weight: bold;
+  color:tomato;
+  margin-left: 10px;
+
+}
+
+@media screen and (max-width: 814px){
+
+  .worksContainer{
+    background-size:cover;
+    width: 100%;
+  }
+  .myProfile{
+    font-size: 3rem;
+    top: 9%;
+  }
+
+  .worksImage{
+    width: 100%;
+    height: 180px;
+  }
+  
+  .worksBox{
+    display: block;
+    top: 52%;
+    left: 50%;
+    width:300px;
+
+  
+  }
+
+  .worksBox1,.worksBox2,.worksBox3{
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  
+  .worksBox1 h3,.worksBox2 h3,.worksBox3 h3 {
+    display: none;
+  }
+  .worksBox1 h4,.worksBox2 h4,.worksBox3 h4 {
+    display: none;
+    
+  }
+  .worksBox1 p,.worksBox2 p,.worksBox3 p{
+    display: none;
+  }
+  .worksBoxA {
+    display: none;
+  }
+  
+  .btnBox{
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .btnStyle{
+    width: 200px;
+    font-size: 20px;
+  }
+  
+  
+  .soccerAnimation img{
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+    position: absolute;
+    bottom: 35px;
+    right:25px;
+    animation: r1 3s linear infinite;
+    
+  }
+
+}

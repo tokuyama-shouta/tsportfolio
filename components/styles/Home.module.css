@@ -1,0 +1,132 @@
+
+.mainBox{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.myName{
+  color:#000;
+  font-size: 6rem;
+  letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  position: absolute;
+	top: 25%;
+	left: 45%;
+  transform: translate(-50%, -50%);
+  font: bold 300% Consolas, Monaco, monospace;
+	border-right: .1em solid black;
+	width: 16.5em; 
+	width: 17ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 5s steps(10, end),blink-caret .5s step-end infinite alternate;
+	animation: typing 5s steps(10, end),blink-caret .5s step-end infinite alternate;
+}
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
+.myTitle{
+  color:#000;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  position: absolute;
+	top: 46%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  font: bold 300% Consolas, Monaco, monospace;
+}
+
+.btnBox{
+  position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.btnStyle{
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 24px;
+  background: #000;
+  margin-right: 10px;
+  border-radius: 30px;
+  border: none;
+}
+
+.btnStyle:hover {
+  color: skyblue;
+}
+
+
+.soccerAnimation img{
+  width: 50px;
+  height: 50px;
+  border-radius: 60%;
+  position: absolute;
+  top: 43.5%;
+	left: 54%;
+  animation: r1 3s linear infinite;
+  
+}
+
+@keyframes r1 {
+  0%   { transform: rotate(0deg);}
+  100% { transform: rotate(-360deg);}
+}
+
+
+
+@media screen and (max-width: 814px){
+  .mainBox{
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .myName{
+
+    font-size: 2rem;
+    top: 25%;
+    left: 41%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .myTitle{
+    font-size: 2rem;
+    top: 41%;
+    left: 45%;
+  }
+  .btnBox{
+    top: 68%;
+  }
+  
+  .btnStyle{
+    margin-bottom: 13px;
+  }
+  
+  .soccerAnimation img{
+    width: 30px;
+    height: 30px;
+    top: 39%;
+    left: 67%;
+  }
+
+}
+
+
+
+
+
+

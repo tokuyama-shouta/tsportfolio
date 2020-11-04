@@ -1,0 +1,43 @@
+
+.container{
+  background: url(https://publicdomainq.net/images/201708/20s/publicdomainq-0012444bll.jpg);
+  background-size:contain;
+  height: 100vh;
+  position:fixed;
+  width: 100%;
+  z-index:-100;
+  animation: cloudmove 60s linear infinite;
+  -webkit-animation: cloudmove 60s linear infinite;
+  -moz-animation: cloudmove 60s linear infinite;
+  margin: 0;
+}
+
+@keyframes cloudmove {
+  0% {background-position: 0 0;}
+  25% {background-position: 200px 5px;}
+  50% {background-position: 400px 0;}
+  75% {background-position: 600px 5px;}
+  100% {background-position: 800px 0;}
+}
+@-webkit-keyframes cloudmove {
+	0% {background-position: 0 0;}
+	25% {background-position: 200px 5px;}
+	50% {background-position: 400px 0;}
+	75% {background-position: 600px 5px;}
+	100% {background-position: 800px 0;}
+}
+@-moz-keyframes cloudmove {
+	0% {background-position: 0 0;}
+	25% {background-position: 200px 5px;}
+	50% {background-position: 400px 0;}
+	75% {background-position: 600px 5px;}
+  100% {background-positi: 800px 0;}
+}
+
+
+@media screen and (max-width: 767px){
+  .container{
+    background-size: cover;
+    width: 100%;
+  }
+}

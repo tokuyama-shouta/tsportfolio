@@ -1,0 +1,148 @@
+
+
+
+.myProfile{
+  color:#000;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.btnBox{
+  position: absolute;
+	top: 83%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.btnStyle{
+  display: inline-block;
+  width: 400px;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 24px;
+  background: #000;
+  border-radius: 30px;
+  border: none;
+}
+
+.btnStyle:hover {
+  color: skyblue;
+}
+
+.soccerAnimation img{
+  width: 100px;
+  height: 100px;
+  border-radius: 60%;
+  position: absolute;
+  bottom: 50px;
+	right:300px;
+  animation: r1 3s linear infinite;
+  
+}
+
+@keyframes r1 {
+  0%   { transform: rotate(0deg);}
+  100% { transform: rotate(-360deg);}
+}
+
+
+.skillBox{
+  position: absolute;
+	top: 50%;
+	left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  animation-name: sample01; /*←@keyframesにも同じ名前を記述*/
+  animation-duration: 5s; 
+  animation-fill-mode: forwards; 
+}
+
+@keyframes sample01 {  /*←animation-nameにも同じ名前を記述*/
+  0% {
+    opacity: 0;
+    
+  }
+  90% {
+   opacity: 1;
+   
+  }
+   100% {
+    opacity: 1;
+  } 
+}
+
+.sukillbox table{
+  padding-right: 20px;
+}
+.skillBox table tr {
+  font-size: 30px;
+  padding-bottom: 100px;
+}
+.skillBox1 th {
+  padding: 20px;
+  float: left;
+}
+.skillBox1 td {
+  padding-left: 40px;
+
+}
+
+
+@media screen and (max-width: 814px){
+  .myProfile{
+    font-size: 3rem;
+    top: 25%;
+  }
+  
+  .skillBox{
+    top: 55%;
+  }
+
+  .skillBox table tr {
+    font-size: 20px;
+  }
+  .skillBox1 th {
+    width: 120px;
+  }
+  .skillBox1 td {
+    padding-bottom: 20px;
+  
+  }
+ 
+  
+  
+  .btnBox{
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .btnStyle{
+    width: 200px;
+    font-size: 20px;
+  }
+  
+  
+  .soccerAnimation img{
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+    position: absolute;
+    bottom: 50px;
+    right:25px;
+    animation: r1 3s linear infinite;
+    
+  }
+
+}
